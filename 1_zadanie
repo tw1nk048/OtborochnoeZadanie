@@ -1,0 +1,6 @@
+Sql – запрос
+Таблица сотрудников с полями: id, surname experience
+
+SELECT MAX(surname) AS MaxExperienceName
+FROM сотрудники
+WHERE сотрудники.experience <> (SELECT MAX(experience) FROM сотрудники)
